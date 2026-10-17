@@ -1,3 +1,7 @@
+if (location.hostname === 'www.sinerize.com') {
+    location.replace(`https://sinerize.com${location.pathname}${location.search}${location.hash}`);
+}
+
 const translations = {
     pl: {
         nav: {
@@ -983,6 +987,23 @@ if (inquiryForm) {
             });
             const result = await response.json();
             if (!response.ok || result.success !== true) throw new Error('Request rejected');
+            if (result.notification) {
+                let notificationStatus = 'failed';
+                try {
+                    const sent = await fetch('https://formsubmit.co/ajax/sinerize.eng@gmail.com', {
+                        method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+                        body:JSON.stringify(result.notification.payload),signal:AbortSignal.timeout(15000)
+                    });
+                    const delivery = await sent.json();
+                    if (sent.ok && (delivery.success === true || delivery.success === 'true')) notificationStatus = 'submitted';
+                } catch { /* The request is already saved even if email is unavailable. */ }
+                try {
+                    await fetch('/api/leads/notification', {
+                        method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','X-Contact-Token':token},
+                        body:JSON.stringify({requestId,receipt:result.notification.receipt,status:notificationStatus}),signal:AbortSignal.timeout(8000)
+                    });
+                } catch { /* Keep the saved request available to its owner. */ }
+            }
             status.dataset.i18n = 'site.form_success';
             status.textContent = formText('form_success');
             inquiryForm.reset();
