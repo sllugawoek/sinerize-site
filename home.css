@@ -65,3 +65,4 @@
 /* Hero background: rows of real site screens */
 .hc-bg .h-track img{width:440px;aspect-ratio:16/10;border-radius:12px}
 @media(max-width:900px){.hc-bg .h-track img{width:260px}}
+.hc-bg .h-track{animation-duration:160s}.hc-bg .h-track.is-reverse{animation-duration:190s}
