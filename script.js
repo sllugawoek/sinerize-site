@@ -257,7 +257,7 @@ const siteTranslations = {
     "nfc_link": "Explore NFC Cards",
     "bots_category": "Business automation",
     "bots_heading": "Bots & automation",
-    "bots_desc": "Automate publications, mailings and routine tasks in Facebook and Telegram with dedicated desktop apps.",
+    "bots_desc": "Automate publications and mailings in Facebook and Telegram, and create AI videos for TikTok with one click.",
     "bots_link": "Explore bots",
     "automation_explore": "Explore automation & bots",
     "home_steps_eyebrow": "Simple from the start",
@@ -269,7 +269,7 @@ const siteTranslations = {
     "home_step3_title": "Get to work",
     "home_step3_desc": "Put your product or project to work: collect reviews, automate tasks or present your business.",
     "bots_title": "Your tasks.\nOn autopilot.",
-    "bots_subtitle": "Desktop bots for Facebook and Telegram. Automate publications, mailings and account activity, and keep control of your workflow.",
+    "bots_subtitle": "Desktop bots for Facebook, Telegram and TikTok. Automate publications, mailings and account activity, or create ready AI videos with one click.",
     "platforms": "For macOS & Windows",
     "catalog_eyebrow": "Our bots",
     "catalog_heading": "Less clicking.\nMore getting done.",
@@ -312,7 +312,7 @@ const siteTranslations = {
     "home_meta_title": "Sinerize | Visual Production, Bots & NFC",
     "home_meta_desc": "NFC Google Review Cards, Facebook and Telegram bots, websites and visual content. Explore Sinerize products and services for business.",
     "bots_meta_title": "Sinerize | Bots & Business Automation",
-    "bots_meta_desc": "Facebook Bot and Telegram Bot for macOS and Windows: automatic publications, mailings, account warm-up and scheduled tasks. More bots are in development.",
+    "bots_meta_desc": "Facebook, Telegram and TikTok bots: automatic publications, mailings, account warm-up and one-click AI videos for TikTok. More bots are in development.",
     "contact_title": "Let's discuss\nyour next step.",
     "contact_intro": "Tell us what you need. Select a category, leave your email and describe your task. Your phone number is optional.",
     "form_title": "Send a request",
@@ -403,7 +403,13 @@ const siteTranslations = {
     "hp_desktop": "Desktop apps",
     "hp_cards": "Cards",
     "hp_stands": "Stands",
-    "hp_keychains": "Keychains"
+    "hp_keychains": "Keychains",
+    "tt_platforms": "For macOS",
+    "tt_desc": "Creates AI videos for TikTok with one click. The bot writes the script, draws the visuals, adds voiceover, music and sound effects, and delivers a finished vertical video with subtitles.",
+    "tt_feature1": "AI script for every video",
+    "tt_feature2": "Voiceover, music and sound effects included",
+    "tt_feature3": "Synced subtitles and ready vertical MP4",
+    "tt_feature4": "Series continuations, English versions and re-voicing"
   },
   "pl": {
     "nav_bots": "Automatyzacja",
@@ -420,7 +426,7 @@ const siteTranslations = {
     "nfc_link": "Zobacz NFC Cards",
     "bots_category": "Automatyzacja biznesu",
     "bots_heading": "Boty i automatyzacja",
-    "bots_desc": "Automatyzuj publikacje, wysyłkę wiadomości i rutynowe zadania w Facebooku i Telegramie za pomocą aplikacji desktopowych.",
+    "bots_desc": "Automatyzuj publikacje i wysyłkę wiadomości w Facebooku i Telegramie oraz twórz filmy AI na TikToka jednym kliknięciem.",
     "bots_link": "Zobacz boty",
     "automation_explore": "Poznaj automatyzację i boty",
     "home_steps_eyebrow": "Prosto od początku",
@@ -432,7 +438,7 @@ const siteTranslations = {
     "home_step3_title": "Zacznij działać",
     "home_step3_desc": "Wykorzystaj produkt lub projekt: zbieraj opinie, automatyzuj zadania lub zaprezentuj swoją firmę.",
     "bots_title": "Twoje zadania.\nNa autopilocie.",
-    "bots_subtitle": "Boty desktopowe do Facebooka i Telegrama. Automatyzuj publikacje, wysyłkę wiadomości i aktywność kont, zachowując kontrolę nad pracą.",
+    "bots_subtitle": "Boty desktopowe do Facebooka, Telegrama i TikToka. Automatyzuj publikacje, wysyłkę wiadomości i aktywność kont albo twórz gotowe filmy AI jednym kliknięciem.",
     "platforms": "Na macOS i Windows",
     "catalog_eyebrow": "Nasze boty",
     "catalog_heading": "Mniej klikania.\nWięcej działania.",
@@ -475,7 +481,7 @@ const siteTranslations = {
     "home_meta_title": "Sinerize | Produkcja wizualna, boty i NFC",
     "home_meta_desc": "Karty NFC do opinii Google, boty do Facebooka i Telegrama, strony internetowe i treści wizualne. Poznaj ofertę Sinerize.",
     "bots_meta_title": "Sinerize | Boty i automatyzacja biznesu",
-    "bots_meta_desc": "Facebook Bot i Telegram Bot na macOS i Windows: automatyczne publikacje, wysyłka wiadomości, aktywność kont i harmonogramy. Kolejne boty w przygotowaniu.",
+    "bots_meta_desc": "Boty do Facebooka, Telegrama i TikToka: automatyczne publikacje, wysyłka wiadomości, aktywność kont i filmy AI na TikToka jednym kliknięciem. Kolejne boty w przygotowaniu.",
     "contact_title": "Porozmawiajmy\no Twoim projekcie.",
     "contact_intro": "Powiedz, czego potrzebujesz. Wybierz kategorię, podaj e-mail i opisz zadanie. Numer telefonu jest opcjonalny.",
     "form_title": "Wyślij zapytanie",
@@ -566,7 +572,13 @@ const siteTranslations = {
     "hp_desktop": "Aplikacje desktopowe",
     "hp_cards": "Karty",
     "hp_stands": "Stojaki",
-    "hp_keychains": "Breloki"
+    "hp_keychains": "Breloki",
+    "tt_platforms": "Na macOS",
+    "tt_desc": "Tworzy filmy AI na TikToka jednym kliknięciem. Bot pisze scenariusz, rysuje grafikę, dodaje lektora, muzykę i efekty dźwiękowe, a na końcu oddaje gotowy pionowy film z napisami.",
+    "tt_feature1": "Scenariusz AI do każdego filmu",
+    "tt_feature2": "Lektor, muzyka i efekty dźwiękowe w zestawie",
+    "tt_feature3": "Zsynchronizowane napisy i gotowy pionowy MP4",
+    "tt_feature4": "Kontynuacje serii, wersje angielskie i zmiana lektora"
   },
   "de": {
     "nav_bots": "Automatisierung",
@@ -583,7 +595,7 @@ const siteTranslations = {
     "nfc_link": "NFC Cards entdecken",
     "bots_category": "Business-Automatisierung",
     "bots_heading": "Bots & Automatisierung",
-    "bots_desc": "Automatisieren Sie Beiträge, Nachrichten und Routineaufgaben in Facebook und Telegram mit eigenen Desktop-Apps.",
+    "bots_desc": "Automatisieren Sie Beiträge und Nachrichten in Facebook und Telegram und erstellen Sie KI-Videos für TikTok mit einem Klick.",
     "bots_link": "Bots entdecken",
     "automation_explore": "Automatisierung & Bots entdecken",
     "home_steps_eyebrow": "Einfach von Anfang an",
@@ -595,7 +607,7 @@ const siteTranslations = {
     "home_step3_title": "Loslegen",
     "home_step3_desc": "Produkt oder Projekt einsetzen: Bewertungen sammeln, Aufgaben automatisieren oder Ihr Unternehmen präsentieren.",
     "bots_title": "Ihre Aufgaben.\nAuf Autopilot.",
-    "bots_subtitle": "Desktop-Bots für Facebook und Telegram. Automatisieren Sie Beiträge, Nachrichten und Kontoaktivitäten und behalten Sie die Kontrolle.",
+    "bots_subtitle": "Desktop-Bots für Facebook, Telegram und TikTok. Automatisieren Sie Beiträge, Nachrichten und Kontoaktivitäten oder erstellen Sie fertige KI-Videos mit einem Klick.",
     "platforms": "Für macOS & Windows",
     "catalog_eyebrow": "Unsere Bots",
     "catalog_heading": "Weniger klicken.\nMehr erledigen.",
@@ -638,7 +650,7 @@ const siteTranslations = {
     "home_meta_title": "Sinerize | Visuelle Produktion, Bots & NFC",
     "home_meta_desc": "NFC-Karten für Google-Bewertungen, Facebook- und Telegram-Bots, Websites und visuelle Inhalte. Entdecken Sie Sinerize.",
     "bots_meta_title": "Sinerize | Bots & Business-Automatisierung",
-    "bots_meta_desc": "Facebook Bot und Telegram Bot für macOS und Windows: Beiträge, Nachrichten, Kontoaktivitäten und Zeitpläne automatisieren. Weitere Bots in Entwicklung.",
+    "bots_meta_desc": "Bots für Facebook, Telegram und TikTok: automatische Beiträge, Nachrichten, Kontoaktivitäten und KI-Videos für TikTok mit einem Klick. Weitere Bots in Entwicklung.",
     "contact_title": "Sprechen wir\nüber Ihr Vorhaben.",
     "contact_intro": "Wählen Sie eine Kategorie, hinterlassen Sie Ihre E-Mail-Adresse und beschreiben Sie Ihre Aufgabe. Die Telefonnummer ist optional.",
     "form_title": "Anfrage senden",
@@ -729,7 +741,13 @@ const siteTranslations = {
     "hp_desktop": "Desktop-Apps",
     "hp_cards": "Karten",
     "hp_stands": "Aufsteller",
-    "hp_keychains": "Schlüsselanhänger"
+    "hp_keychains": "Schlüsselanhänger",
+    "tt_platforms": "Für macOS",
+    "tt_desc": "Erstellt KI-Videos für TikTok mit einem Klick. Der Bot schreibt das Skript, gestaltet die Grafik, fügt Sprecher, Musik und Soundeffekte hinzu und liefert ein fertiges Hochformat-Video mit Untertiteln.",
+    "tt_feature1": "KI-Skript für jedes Video",
+    "tt_feature2": "Sprecher, Musik und Soundeffekte inklusive",
+    "tt_feature3": "Synchrone Untertitel und fertiges Hochformat-MP4",
+    "tt_feature4": "Fortsetzungen, englische Versionen und neue Vertonung"
   },
   "ru": {
     "nav_bots": "Автоматизация",
@@ -746,7 +764,7 @@ const siteTranslations = {
     "nfc_link": "Подробнее о NFC Cards",
     "bots_category": "Автоматизация бизнеса",
     "bots_heading": "Боты и автоматизация",
-    "bots_desc": "Автоматизируйте публикации, рассылки и рутинные задачи в Facebook и Telegram с помощью отдельных приложений.",
+    "bots_desc": "Автоматизируйте публикации и рассылки в Facebook и Telegram и создавайте ИИ-видео для TikTok одной кнопкой.",
     "bots_link": "Подробнее о ботах",
     "automation_explore": "Подробнее об автоматизации и ботах",
     "home_steps_eyebrow": "Просто с первого шага",
@@ -758,7 +776,7 @@ const siteTranslations = {
     "home_step3_title": "Начните пользоваться",
     "home_step3_desc": "Используйте результат: собирайте отзывы, автоматизируйте задачи или представляйте свой бизнес.",
     "bots_title": "Ваши задачи.\nНа автопилоте.",
-    "bots_subtitle": "Боты для Facebook и Telegram. Автоматизируйте публикации, рассылки и прокачку аккаунтов, сохраняя контроль над работой.",
+    "bots_subtitle": "Боты для Facebook, Telegram и TikTok. Автоматизируйте публикации, рассылки и прокачку аккаунтов или создавайте готовые ИИ-видео одной кнопкой.",
     "platforms": "Для macOS и Windows",
     "catalog_eyebrow": "Наши боты",
     "catalog_heading": "Меньше кликов.\nБольше результата.",
@@ -801,7 +819,7 @@ const siteTranslations = {
     "home_meta_title": "Sinerize | Визуальное производство, боты и NFC",
     "home_meta_desc": "NFC-карты для отзывов Google, боты для Facebook и Telegram, сайты и визуальный контент. Продукты и услуги Sinerize для бизнеса.",
     "bots_meta_title": "Sinerize | Боты и автоматизация бизнеса",
-    "bots_meta_desc": "Facebook Bot и Telegram Bot для macOS и Windows: автопубликации, рассылки, прокачка аккаунтов и расписания. Другие боты в разработке.",
+    "bots_meta_desc": "Боты для Facebook, Telegram и TikTok: автопубликации, рассылки, прокачка аккаунтов и ИИ-видео для TikTok одной кнопкой. Другие боты в разработке.",
     "contact_title": "Давайте обсудим\nвашу задачу.",
     "contact_intro": "Выберите категорию, оставьте email и опишите задачу. Номер телефона можно указать по желанию.",
     "form_title": "Оставить заявку",
@@ -892,7 +910,13 @@ const siteTranslations = {
     "hp_desktop": "Десктоп-приложения",
     "hp_cards": "Карточки",
     "hp_stands": "Подставки",
-    "hp_keychains": "Брелоки"
+    "hp_keychains": "Брелоки",
+    "tt_platforms": "Для macOS",
+    "tt_desc": "Создаёт ИИ-видео для TikTok одной кнопкой. Бот сам пишет сценарий, рисует графику, добавляет озвучку, музыку и звуковые эффекты и выдаёт готовое вертикальное видео с субтитрами.",
+    "tt_feature1": "ИИ-сценарий для каждого видео",
+    "tt_feature2": "Озвучка, музыка и звуковые эффекты",
+    "tt_feature3": "Синхронные субтитры и готовый вертикальный MP4",
+    "tt_feature4": "Продолжения серий, английские версии и переозвучка"
   }
 };
 for (const lang of Object.keys(siteTranslations)) translations[lang].site = siteTranslations[lang];
@@ -1064,7 +1088,7 @@ if (inquiryForm) {
     const buttonLabel = button.querySelector('[data-i18n]');
     const status = inquiryForm.querySelector('.form-status');
     const products = {
-        automation: [['facebook', 'Facebook Bot'], ['telegram', 'Telegram Bot']],
+        automation: [['facebook', 'Facebook Bot'], ['telegram', 'Telegram Bot'], ['tiktok', 'TikTok Bot']],
         nfc: [['classic', 'Classic NFC Card'], ['stand', 'Wooden Stand'], ['keychain', 'NFC Keychain'], ['custom', 'Custom Design']],
         visual: [['website', 'visual_service1_title'], ['graphics', 'visual_service2_title'], ['motion', 'visual_service3_title']]
     };
