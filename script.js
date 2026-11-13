@@ -334,7 +334,7 @@ const siteTranslations = {
     "form_sending": "Sending…",
     "form_success": "Thank you! Your request has been received. We will reply by email.",
     "form_error": "We could not send your request. Your text is saved in this form. Please try again or email us directly.",
-    "form_privacy": "We use your contact details to respond to your request. The request is stored in our client database and an email notification is sent.",
+    "form_privacy": "We use your contact details only to respond to your request.",
     "contact_meta_title": "Sinerize | Contact",
     "contact_meta_desc": "Contact Sinerize about automation, bots, NFC products or visual production. Choose a category and send your request.",
     "nav_nfc": "NFC Cards",
@@ -460,7 +460,7 @@ const siteTranslations = {
     "form_sending": "Wysyłanie…",
     "form_success": "Dziękujemy! Otrzymaliśmy zapytanie. Odpowiemy e-mailem.",
     "form_error": "Nie udało się wysłać zapytania. Treść pozostała w formularzu. Spróbuj ponownie lub napisz bezpośrednio.",
-    "form_privacy": "Dane kontaktowe służą do odpowiedzi na zapytanie. Zapisujemy je w bazie klientów i wysyłamy powiadomienie e-mail.",
+    "form_privacy": "Dane kontaktowe wykorzystujemy wyłącznie do odpowiedzi na zapytanie.",
     "contact_meta_title": "Sinerize | Kontakt",
     "contact_meta_desc": "Skontaktuj się z Sinerize w sprawie automatyzacji, botów, NFC lub produkcji wizualnej. Wybierz kategorię i wyślij zapytanie.",
     "nav_nfc": "NFC Cards",
@@ -586,7 +586,7 @@ const siteTranslations = {
     "form_sending": "Wird gesendet…",
     "form_success": "Vielen Dank! Ihre Anfrage wurde angenommen. Wir antworten per E-Mail.",
     "form_error": "Ihre Anfrage konnte nicht gesendet werden. Ihr Text bleibt im Formular. Versuchen Sie es erneut oder schreiben Sie uns direkt.",
-    "form_privacy": "Wir nutzen Ihre Kontaktdaten, um auf Ihre Anfrage zu antworten. Sie wird in unserer Kundendatenbank gespeichert und per E-Mail gemeldet.",
+    "form_privacy": "Wir nutzen Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten.",
     "contact_meta_title": "Sinerize | Kontakt",
     "contact_meta_desc": "Kontaktieren Sie Sinerize zu Automatisierung, Bots, NFC oder visueller Produktion. Kategorie auswählen und Anfrage senden.",
     "nav_nfc": "NFC Cards",
@@ -712,7 +712,7 @@ const siteTranslations = {
     "form_sending": "Отправляем…",
     "form_success": "Спасибо! Заявка принята. Ответим вам по email.",
     "form_error": "Не удалось отправить заявку. Текст остался в форме. Попробуйте ещё раз или напишите нам напрямую.",
-    "form_privacy": "Контактные данные нужны для ответа на ваш запрос. Заявка сохраняется в базе клиентов и отправляется уведомлением на почту.",
+    "form_privacy": "Контактные данные используются только для ответа на ваш запрос.",
     "contact_meta_title": "Sinerize | Контакты",
     "contact_meta_desc": "Свяжитесь с Sinerize по вопросам автоматизации, ботов, NFC-карточек или визуального производства. Выберите категорию и отправьте заявку.",
     "nav_nfc": "NFC Карточки",
@@ -974,35 +974,24 @@ if (inquiryForm) {
         delete status.dataset.i18n;
         status.classList.remove('is-error');
         try {
-            const session = await fetch('/api/contact-token', {credentials:'same-origin',cache:'no-store'});
-            if (!session.ok) throw new Error('Form session unavailable');
-            const { token } = await session.json();
-            const payload = Object.fromEntries(new FormData(inquiryForm));
-            payload.language = document.documentElement.lang;
-            payload.requestId = requestId;
-            const response = await fetch('/api/leads', {
-                method:'POST', credentials:'same-origin',
-                headers:{'Content-Type':'application/json','X-Contact-Token':token},
-                body:JSON.stringify(payload), signal:AbortSignal.timeout(25000)
-            });
-            const result = await response.json();
-            if (!response.ok || result.success !== true) throw new Error('Request rejected');
-            if (result.notification) {
-                let notificationStatus = 'failed';
-                try {
-                    const sent = await fetch('https://formsubmit.co/ajax/sinerize.eng@gmail.com', {
-                        method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-                        body:JSON.stringify(result.notification.payload),signal:AbortSignal.timeout(15000)
-                    });
-                    const delivery = await sent.json();
-                    if (sent.ok && (delivery.success === true || delivery.success === 'true')) notificationStatus = 'submitted';
-                } catch { /* The request is already saved even if email is unavailable. */ }
-                try {
-                    await fetch('/api/leads/notification', {
-                        method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','X-Contact-Token':token},
-                        body:JSON.stringify({requestId,receipt:result.notification.receipt,status:notificationStatus}),signal:AbortSignal.timeout(8000)
-                    });
-                } catch { /* Keep the saved request available to its owner. */ }
+            const data = Object.fromEntries(new FormData(inquiryForm));
+            // Honeypot: bots fill the hidden "website" field; pretend success and send nothing.
+            if (!data.website) {
+                const productLabel = product.value ? product.options[product.selectedIndex].text : 'Help choosing';
+                const categoryLabel = category.options[category.selectedIndex].text;
+                const sent = await fetch('https://formsubmit.co/ajax/sinerize.eng@gmail.com', {
+                    method:'POST', headers:{'Content-Type':'application/json',Accept:'application/json'},
+                    body:JSON.stringify({
+                        _subject:`Sinerize — new request: ${product.value ? productLabel : categoryLabel}`,
+                        _template:'table', _captcha:'false', _replyto:data.email,
+                        name:data.name || '—', email:data.email, phone:data.phone || 'Not provided',
+                        category:categoryLabel, product:productLabel, message:data.message,
+                        language:document.documentElement.lang, page:location.href, request_id:requestId
+                    }),
+                    signal:AbortSignal.timeout(20000)
+                });
+                const delivery = await sent.json();
+                if (!sent.ok || !(delivery.success === true || delivery.success === 'true')) throw new Error('Request rejected');
             }
             status.dataset.i18n = 'site.form_success';
             status.textContent = formText('form_success');
