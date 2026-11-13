@@ -6,6 +6,7 @@
 .pf-hero-stack img:nth-child(3){bottom:0;right:6%;transform:rotate(1deg);z-index:2}
 .pf-hero-stack:hover img:nth-child(1){transform:rotate(6deg) translate(12px,-10px)}
 .pf-hero-stack:hover img:nth-child(2){transform:rotate(-5deg) translate(-12px,0)}
+.pf-hero-stack:hover img:nth-child(3){transform:rotate(0deg) translateY(-14px) scale(1.03)}
 
 .portfolio{padding:130px 0;background:#000;color:#fff}
 .portfolio .section-heading p{color:#9a9a9a}
