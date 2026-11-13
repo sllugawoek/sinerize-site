@@ -243,7 +243,7 @@ const translations = {
 
 const siteTranslations = {
   "en": {
-    "nav_bots": "Automation",
+    "nav_bots": "Bots & Automation",
     "nav_contact": "Contact",
     "home_title": "Less routine.\nMore business.",
     "home_subtitle": "Visual production, business automation and NFC products. Creative and practical solutions for your business.",
@@ -255,7 +255,7 @@ const siteTranslations = {
     "nfc_category": "NFC products",
     "nfc_desc": "More Google reviews with one tap. Cards, stands and keychains, with custom designs for your business.",
     "nfc_link": "Explore NFC Cards",
-    "bots_category": "Business automation",
+    "bots_category": "Bots & automation",
     "bots_heading": "Bots & automation",
     "bots_desc": "Automate publications and mailings in Facebook and Telegram, and create AI videos for TikTok with one click.",
     "bots_link": "Explore bots",
@@ -412,7 +412,7 @@ const siteTranslations = {
     "tt_feature4": "Series continuations, English versions and re-voicing"
   },
   "pl": {
-    "nav_bots": "Automatyzacja",
+    "nav_bots": "Boty i automatyzacja",
     "nav_contact": "Kontakt",
     "home_title": "Mniej rutyny.\nWięcej biznesu.",
     "home_subtitle": "Produkcja wizualna, automatyzacja biznesu i produkty NFC. Kreatywne i praktyczne rozwiązania dla Twojej firmy.",
@@ -424,7 +424,7 @@ const siteTranslations = {
     "nfc_category": "Produkty NFC",
     "nfc_desc": "Więcej opinii Google po jednym zbliżeniu telefonu. Karty, stojaki i breloki z projektem dla Twojej firmy.",
     "nfc_link": "Zobacz NFC Cards",
-    "bots_category": "Automatyzacja biznesu",
+    "bots_category": "Boty i automatyzacja",
     "bots_heading": "Boty i automatyzacja",
     "bots_desc": "Automatyzuj publikacje i wysyłkę wiadomości w Facebooku i Telegramie oraz twórz filmy AI na TikToka jednym kliknięciem.",
     "bots_link": "Zobacz boty",
@@ -581,7 +581,7 @@ const siteTranslations = {
     "tt_feature4": "Kontynuacje serii, wersje angielskie i zmiana lektora"
   },
   "de": {
-    "nav_bots": "Automatisierung",
+    "nav_bots": "Bots & Automatisierung",
     "nav_contact": "Kontakt",
     "home_title": "Weniger Routine.\nMehr Business.",
     "home_subtitle": "Visuelle Produktion, Business-Automatisierung und NFC-Produkte. Kreative und praktische Lösungen für Ihr Unternehmen.",
@@ -593,7 +593,7 @@ const siteTranslations = {
     "nfc_category": "NFC-Produkte",
     "nfc_desc": "Mehr Google-Bewertungen mit einer Berührung. Karten, Aufsteller und Schlüsselanhänger im Design Ihres Unternehmens.",
     "nfc_link": "NFC Cards entdecken",
-    "bots_category": "Business-Automatisierung",
+    "bots_category": "Bots & Automatisierung",
     "bots_heading": "Bots & Automatisierung",
     "bots_desc": "Automatisieren Sie Beiträge und Nachrichten in Facebook und Telegram und erstellen Sie KI-Videos für TikTok mit einem Klick.",
     "bots_link": "Bots entdecken",
@@ -750,7 +750,7 @@ const siteTranslations = {
     "tt_feature4": "Fortsetzungen, englische Versionen und neue Vertonung"
   },
   "ru": {
-    "nav_bots": "Автоматизация",
+    "nav_bots": "Боты и автоматизация",
     "nav_contact": "Контакты",
     "home_title": "Меньше рутины.\nБольше дела.",
     "home_subtitle": "Визуальное производство, автоматизация бизнеса и NFC-продукты. Креативные и практичные решения для вашего бизнеса.",
@@ -762,7 +762,7 @@ const siteTranslations = {
     "nfc_category": "NFC-продукты",
     "nfc_desc": "Больше отзывов Google в одно касание. Карты, подставки и брелоки с индивидуальным дизайном для вашего бизнеса.",
     "nfc_link": "Подробнее о NFC Cards",
-    "bots_category": "Автоматизация бизнеса",
+    "bots_category": "Боты и автоматизация",
     "bots_heading": "Боты и автоматизация",
     "bots_desc": "Автоматизируйте публикации и рассылки в Facebook и Telegram и создавайте ИИ-видео для TikTok одной кнопкой.",
     "bots_link": "Подробнее о ботах",
