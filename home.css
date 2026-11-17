@@ -72,3 +72,18 @@
 
 /* Browsers without aspect-ratio (older Safari): keep the 16:10 frame */
 @supports not (aspect-ratio:1/1){.h-media{height:0;padding-top:62.5%}}
+
+/* homepage: all bots in one pile, they fan out on hover */
+.h-media .bot-pile{position:absolute;inset:0}
+.h-media .bot-pile img{position:absolute;width:29%;height:auto;border-radius:24%;filter:drop-shadow(0 16px 22px rgba(0,0,0,.45));transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.bot-pile .bp-whatsapp{left:20%;top:9%;transform:rotate(-14deg)}
+.bot-pile .bp-threads{left:51%;top:8%;transform:rotate(13deg)}
+.bot-pile .bp-facebook{left:13%;top:39%;transform:rotate(-8deg)}
+.bot-pile .bp-tiktok{left:58%;top:38%;transform:rotate(10deg)}
+.bot-pile .bp-telegram{left:35.5%;top:25%;transform:rotate(-2deg)}
+.h-media:hover .bot-pile .bp-whatsapp{transform:translate(-18%,-10%) rotate(-22deg)}
+.h-media:hover .bot-pile .bp-threads{transform:translate(18%,-10%) rotate(22deg)}
+.h-media:hover .bot-pile .bp-facebook{transform:translate(-22%,8%) rotate(-16deg)}
+.h-media:hover .bot-pile .bp-tiktok{transform:translate(22%,8%) rotate(18deg)}
+.h-media:hover .bot-pile .bp-telegram{transform:translateY(-6%) scale(1.08) rotate(0deg)}
+@media (prefers-reduced-motion:reduce){.h-media .bot-pile img{transition:none}}
