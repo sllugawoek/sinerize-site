@@ -10,7 +10,7 @@ const translations = {
             contact: 'Kontakt'
         },
         hero: {
-            title: 'Więcej opinii Google.\nJedno przyłożenie telefonu.',
+            title: 'Więcej opinii.\nJednym dotknięciem.',
             subtitle: 'Pomóż klientom zostawić opinię Google w kilka sekund dzięki karcie NFC Premium.',
             contact: 'Skontaktuj się z nami',
             learnMore: 'Dowiedz się więcej'
@@ -69,7 +69,7 @@ const translations = {
             contact: 'Contact'
         },
         hero: {
-            title: 'More Google Reviews.\nOne tap away.',
+            title: 'More reviews.\nOne tap away.',
             subtitle: 'Help your customers leave a Google review in seconds using a premium NFC review card.',
             contact: 'Contact us',
             learnMore: 'Learn more'
@@ -128,7 +128,7 @@ const translations = {
             contact: 'Kontakt'
         },
         hero: {
-            title: 'Mehr Google-Bewertungen.\nMit nur einer Berührung.',
+            title: 'Mehr Bewertungen.\nMit einem Tap.',
             subtitle: 'Helfen Sie Ihren Kunden, in wenigen Sekunden eine Google-Bewertung mit einer Premium-NFC-Karte zu hinterlassen.',
             contact: 'Kontakt',
             learnMore: 'Mehr erfahren'
@@ -187,7 +187,7 @@ const translations = {
             contact: 'Контакты'
         },
         hero: {
-            title: 'Больше отзывов Google.\nОдно касание.',
+            title: 'Больше отзывов.\nОдним касанием.',
             subtitle: 'Помогите клиентам оставить отзыв Google за несколько секунд с помощью премиальной NFC-карты.',
             contact: 'Связаться',
             learnMore: 'Подробнее'

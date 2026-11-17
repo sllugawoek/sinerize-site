@@ -1158,11 +1158,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
 .section-heading { max-width: 780px; margin: 0 auto 68px; text-align: center; }
 .section-heading h2 { font-size: 58px; line-height: 1.08; letter-spacing: -2px; margin-bottom: 24px; }
 .section-heading p { font-size: 20px; line-height: 1.8; color: #666; }
-.home-hero, .bots-hero, .visual-hero { min-height: 760px; }
-.home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content { gap: 64px; }
-.home-hero h1, .bots-hero h1, .visual-hero h1 { font-size: clamp(56px, 5.4vw, 72px); }
-.home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons { gap: 14px; flex-wrap: wrap; }
-.home-hero .btn-primary, .home-hero .btn-secondary, .bots-hero .btn-primary, .bots-hero .btn-secondary, .visual-hero .btn-primary, .visual-hero .btn-secondary { padding: 18px 28px; }
+.home-hero, .bots-hero, .visual-hero, .nfc-hero { min-height: 760px; }
+.home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content, .nfc-hero .hero-content { gap: 64px; }
+.home-hero h1, .bots-hero h1, .visual-hero h1, .nfc-hero h1 { font-size: clamp(56px, 5.4vw, 72px); }
+.home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons, .nfc-hero .buttons { gap: 14px; flex-wrap: wrap; }
+.home-hero .btn-primary, .home-hero .btn-secondary, .bots-hero .btn-primary, .bots-hero .btn-secondary, .visual-hero .btn-primary, .visual-hero .btn-secondary, .nfc-hero .btn-primary, .nfc-hero .btn-secondary { padding: 18px 28px; }
 .home-preview { position: relative; height: 450px; display: grid; place-items: center; }
 .preview-card { position: absolute; width: 285px; border: 1px solid rgba(255,255,255,.14); border-radius: 28px; display: flex; flex-direction: column; align-items: center; padding: 26px; background: #111; box-shadow: 0 25px 70px rgba(0,0,0,.35); }
 .preview-card > span { font-size: 17px; font-weight: 500; margin-top: 18px; }
@@ -1298,7 +1298,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
 @keyframes dialog-enter { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 1100px) {
-  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content { gap: 32px; }
+  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content, .nfc-hero .hero-content { gap: 32px; }
   .home-preview { height: 400px; }
   .preview-card { width: 245px; padding: 22px; }
   .preview-nfc img { width: 175px; height: 175px; }
@@ -1310,11 +1310,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
   .art-browser { width: 300px; }
 }
 @media (max-width: 900px) {
-  .home-hero, .bots-hero, .visual-hero { min-height: auto; padding: 140px 0 80px; }
-  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content { grid-template-columns: 1fr; text-align: center; gap: 65px; }
-  .home-hero .hero-left, .bots-hero .hero-left, .visual-hero .hero-left { max-width: 650px; margin: auto; }
-  .home-hero p, .bots-hero p, .visual-hero p { margin-left: auto; margin-right: auto; }
-  .home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons { justify-content: center; }
+  .home-hero, .bots-hero, .visual-hero, .nfc-hero { min-height: auto; padding: 140px 0 80px; }
+  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content, .nfc-hero .hero-content { grid-template-columns: 1fr; text-align: center; gap: 65px; }
+  .home-hero .hero-left, .bots-hero .hero-left, .visual-hero .hero-left, .nfc-hero .hero-left { max-width: 650px; margin: auto; }
+  .home-hero p, .bots-hero p, .visual-hero p, .nfc-hero p { margin-left: auto; margin-right: auto; }
+  .home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons, .nfc-hero .buttons { justify-content: center; }
   .home-preview { width: 460px; max-width: 100%; margin: auto; }
   .bots-hero-visual { width: 430px; max-width: 100%; margin: auto; padding: 0 0 35px; }
   .solution-visual { height: 265px; padding: 28px; }
@@ -1350,11 +1350,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
   nav .site-nav a[aria-current="page"]::after { display: none; }
 }
 @media (max-width: 700px) {
-  .home-hero, .bots-hero, .visual-hero { padding: 120px 0 65px; }
-  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content { gap: 48px; }
-  .home-hero h1, .bots-hero h1, .visual-hero h1 { font-size: clamp(38px, 9.8vw, 50px); letter-spacing: -1.8px; }
-  .home-hero p, .bots-hero p, .visual-hero p { font-size: 18px; margin-bottom: 30px; }
-  .home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons { gap: 14px; }
+  .home-hero, .bots-hero, .visual-hero, .nfc-hero { padding: 120px 0 65px; }
+  .home-hero .hero-content, .bots-hero .hero-content, .visual-hero .hero-content, .nfc-hero .hero-content { gap: 48px; }
+  .home-hero h1, .bots-hero h1, .visual-hero h1, .nfc-hero h1 { font-size: clamp(38px, 9.8vw, 50px); letter-spacing: -1.8px; }
+  .home-hero p, .bots-hero p, .visual-hero p, .nfc-hero p { font-size: 18px; margin-bottom: 30px; }
+  .home-hero .buttons, .bots-hero .buttons, .visual-hero .buttons, .nfc-hero .buttons { gap: 14px; }
   .home-preview { width: 360px; height: 330px; }
   .preview-card { width: 205px; padding: 20px; border-radius: 24px; }
   .preview-nfc { left: 12px; }
@@ -1496,3 +1496,4 @@ button.lp-case{display:block;width:100%;padding:0;border:0;background:none;color
 @media (max-width:1000px){.hub-visual{width:600px;max-width:100%;margin:auto;padding:0}}
 @media (max-width:520px){.hub-bot{width:23%}.hub-bot-1{left:0}.hub-bot-2{left:16%}.hub-bot-3{left:32%}}
 @media (prefers-reduced-motion:reduce){.hub-visual>*{transition:none}}
+@media (min-width:901px){.nfc-hero .hero-content{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
