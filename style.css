@@ -1424,3 +1424,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
 .footer-services a { color: #aaa; text-decoration: none; }
 .footer-services a:hover { color: #fff; }
 
+
+/* ===== CRM systems block (bots page) ===== */
+.crm-section{padding:110px 0;background:#000;color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.crm-section .section-heading p{max-width:640px}
+.crm-layout{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:center;margin-top:48px}
+.crm-showcase{display:block;color:inherit;text-decoration:none;min-width:0}
+.crm-showcase>img{display:block;width:100%;height:auto;border-radius:20px;border:1px solid rgba(255,255,255,.1);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.crm-showcase:hover>img{transform:translateY(-4px)}
+.crm-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.crm-thumbs img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+.crm-copy{min-width:0}
+.crm-case-label{display:inline-block;padding:7px 14px;border-radius:999px;background:#151513;border:1px solid #262624;color:#c6f432;font-weight:600;font-size:14px}
+.crm-copy>p{color:#b5b5b5;line-height:1.7;font-size:17px;margin:18px 0 22px}
+.crm-copy .bot-feature-list{margin:0 0 22px}
+.crm-copy .purchase-options{color:#8a8a8a;font-size:15px;margin:0 0 26px}
+.crm-copy .buttons{display:flex;gap:12px;flex-wrap:wrap}
+@media (max-width:1000px){.crm-layout{grid-template-columns:1fr;gap:36px}}
+@media (max-width:768px){.crm-section{padding:70px 0}.crm-copy .buttons{flex-direction:column}.crm-copy .buttons a{width:100%;text-align:center}}
+.crm-copy .bot-feature-list li{color:#e8e8e8;border-bottom-color:rgba(255,255,255,.12)}
+.crm-copy .bot-feature-list li::before{color:#c6f432}
