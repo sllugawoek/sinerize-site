@@ -7,7 +7,7 @@
     const kind = dialog.querySelector('.pf-lb-top span');
     const dots = dialog.querySelector('.pf-lb-dots');
     let slug = '', index = 0;
-    const src = n => `assets/portfolio/${slug}-${slides[n]}.webp`;
+    const src = n => `/assets/portfolio/${slug}-${slides[n]}.webp`;
     function show(n) {
         index = (n + slides.length) % slides.length;
         img.src = src(index);
@@ -17,7 +17,7 @@
         slug = trigger.dataset.project;
         title.textContent = trigger.dataset.title;
         kind.textContent = trigger.dataset.kind || trigger.closest('.pf-case')?.querySelector('.pf-kind')?.textContent || '';
-        dots.innerHTML = slides.map((s, i) => `<button type="button" aria-label="${i + 1}"><img src="assets/portfolio/${slug}-${s}.webp" alt="" loading="lazy"></button>`).join('');
+        dots.innerHTML = slides.map((s, i) => `<button type="button" aria-label="${i + 1}"><img src="/assets/portfolio/${slug}-${s}.webp" alt="" loading="lazy"></button>`).join('');
         dots.querySelectorAll('button').forEach((b, i) => b.addEventListener('click', () => show(i)));
         show(Number(trigger.dataset.start || 0));
         dialog.showModal();

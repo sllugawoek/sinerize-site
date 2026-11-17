@@ -1416,3 +1416,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline
 
 /* Keep the rotated NFC hero card inside narrow desktop/tablet columns */
 @media (min-width:769px) and (max-width:1300px){.hero-card .card{width:84%}}
+
+/* Footer: links to service pages */
+.footer-services { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 22px; margin-top: 18px; font-size: 14px; }
+.footer-services span { color: #777; }
+.footer-services ul { display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none; margin: 0; padding: 0; }
+.footer-services a { color: #aaa; text-decoration: none; }
+.footer-services a:hover { color: #fff; }
+

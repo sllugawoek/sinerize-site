@@ -1,8 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sinerize.com/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://sinerize.com/visual.html</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://sinerize.com/bots.html</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://sinerize.com/nfc.html</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://sinerize.com/contact.html</loc><lastmod>2026-11-17</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://sinerize.com/</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/"/>
+  </url>
+  <url><loc>https://sinerize.com/de/</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/"/>
+  </url>
+  <url><loc>https://sinerize.com/visual.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/visual.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/visual.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/visual.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/visual.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/visual.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/visual.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/visual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/visual.html"/>
+  </url>
+  <url><loc>https://sinerize.com/bots.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/bots.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/bots.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/bots.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/bots.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/bots.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/bots.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/bots.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/bots.html"/>
+  </url>
+  <url><loc>https://sinerize.com/nfc.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/nfc.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/nfc.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/nfc.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/nfc.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/nfc.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/nfc.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/nfc.html"/>
+  </url>
+  <url><loc>https://sinerize.com/contact.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/contact.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/contact.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/contact.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/contact.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/contact.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/contact.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/contact.html"/>
+  </url>
+  <url><loc>https://sinerize.com/web-design.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/web-design.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/web-design.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/web-design.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/web-design.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/web-design.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/web-design.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/web-design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/web-design.html"/>
+  </url>
+  <url><loc>https://sinerize.com/crm.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/crm.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/crm.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/crm.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/crm.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/crm.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/crm.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/crm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/crm.html"/>
+  </url>
+  <url><loc>https://sinerize.com/automation.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/automation.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/automation.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/automation.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/automation.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/automation.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/automation.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/automation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/automation.html"/>
+  </url>
+  <url><loc>https://sinerize.com/google-reviews.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/google-reviews.html"/>
+  </url>
+  <url><loc>https://sinerize.com/pl/google-reviews.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/google-reviews.html"/>
+  </url>
+  <url><loc>https://sinerize.com/de/google-reviews.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/google-reviews.html"/>
+  </url>
+  <url><loc>https://sinerize.com/ru/google-reviews.html</loc><lastmod>2026-11-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sinerize.com/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://sinerize.com/pl/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://sinerize.com/de/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sinerize.com/ru/google-reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sinerize.com/google-reviews.html"/>
+  </url>
 </urlset>

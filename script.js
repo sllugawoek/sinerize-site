@@ -310,6 +310,8 @@ const siteTranslations = {
     "email": "Email",
     "footer": "© 2026 Sinerize. All rights reserved.",
     "home_meta_title": "Sinerize — Websites, AI Bots & NFC Review Cards",
+    "nfc_meta_title": "Sinerize | Google Review NFC Cards",
+    "nfc_meta_desc": "Premium NFC cards, stands and keychains that open your Google review page with one tap. Collect more Google reviews for your business.",
     "home_meta_desc": "Websites and visual design, AI bots for TikTok, Facebook and Telegram, and NFC cards that collect Google reviews. One studio, ready-to-use results.",
     "bots_meta_title": "Sinerize | Bots & Business Automation",
     "bots_meta_desc": "Facebook, Telegram and TikTok bots: automatic publications, mailings, account warm-up and one-click AI videos for TikTok. More bots are in development.",
@@ -479,6 +481,8 @@ const siteTranslations = {
     "email": "E-mail",
     "footer": "© 2026 Sinerize. Wszelkie prawa zastrzeżone.",
     "home_meta_title": "Sinerize — Strony WWW, boty AI i karty NFC do opinii",
+    "nfc_meta_title": "Sinerize | Karty NFC do opinii Google",
+    "nfc_meta_desc": "Karty, podstawki i breloki NFC, które jednym dotknięciem otwierają stronę opinii Google. Zbieraj więcej opinii o swojej firmie.",
     "home_meta_desc": "Strony internetowe i design, boty AI do TikToka, Facebooka i Telegrama oraz karty NFC zbierające opinie Google. Jedno studio, gotowe efekty.",
     "bots_meta_title": "Sinerize | Boty i automatyzacja biznesu",
     "bots_meta_desc": "Boty do Facebooka, Telegrama i TikToka: automatyczne publikacje, wysyłka wiadomości, aktywność kont i filmy AI na TikToka jednym kliknięciem. Kolejne boty w przygotowaniu.",
@@ -648,6 +652,8 @@ const siteTranslations = {
     "email": "E-Mail",
     "footer": "© 2026 Sinerize. Alle Rechte vorbehalten.",
     "home_meta_title": "Sinerize — Websites, KI-Bots & NFC-Bewertungskarten",
+    "nfc_meta_title": "Sinerize | NFC-Karten für Google-Bewertungen",
+    "nfc_meta_desc": "NFC-Karten, Aufsteller und Schlüsselanhänger, die mit einer Berührung Ihre Google-Bewertungsseite öffnen. Sammeln Sie mehr Google-Bewertungen.",
     "home_meta_desc": "Websites und visuelles Design, KI-Bots für TikTok, Facebook und Telegram sowie NFC-Karten für Google-Bewertungen. Ein Studio, fertige Ergebnisse.",
     "bots_meta_title": "Sinerize | Bots & Business-Automatisierung",
     "bots_meta_desc": "Bots für Facebook, Telegram und TikTok: automatische Beiträge, Nachrichten, Kontoaktivitäten und KI-Videos für TikTok mit einem Klick. Weitere Bots in Entwicklung.",
@@ -817,6 +823,8 @@ const siteTranslations = {
     "email": "E-mail",
     "footer": "© 2026 Sinerize. Все права защищены.",
     "home_meta_title": "Sinerize — Сайты, ИИ-боты и NFC-карты для отзывов",
+    "nfc_meta_title": "Sinerize | NFC-карты для отзывов Google",
+    "nfc_meta_desc": "NFC-карты, подставки и брелоки, которые одним касанием открывают страницу отзывов Google. Собирайте больше отзывов о вашем бизнесе.",
     "home_meta_desc": "Сайты и дизайн, ИИ-боты для TikTok, Facebook и Telegram и NFC-карты для сбора отзывов Google. Одна студия, готовый результат.",
     "bots_meta_title": "Sinerize | Боты и автоматизация бизнеса",
     "bots_meta_desc": "Боты для Facebook, Telegram и TikTok: автопубликации, рассылки, прокачка аккаунтов и ИИ-видео для TikTok одной кнопкой. Другие боты в разработке.",
@@ -956,7 +964,7 @@ function applyTranslations(lang) {
     });
 
     const page = document.body.dataset.page;
-    if (['home', 'bots', 'visual', 'contact'].includes(page)) {
+    if (['home', 'bots', 'visual', 'contact', 'nfc'].includes(page)) {
         const title = siteTranslations[lang][`${page}_meta_title`];
         const description = siteTranslations[lang][`${page}_meta_desc`];
         document.title = title;
@@ -979,9 +987,18 @@ function closeNavigation() {
     navigationToggle.setAttribute('aria-expanded', 'false');
 }
 
-let savedLanguage = 'en';
-try { savedLanguage = localStorage.getItem('language') || 'en'; } catch { /* Storage may be unavailable. */ }
-applyTranslations(Object.hasOwn(translations, savedLanguage) ? savedLanguage : 'en');
+// Each language has its own URL: / (English), /pl/, /de/, /ru/.
+const pathLanguage = (location.pathname.match(/^\/(pl|de|ru)\//) || [])[1] || 'en';
+const pageFile = location.pathname.split('/').pop();
+function languageUrl(lang) {
+    return `${lang === 'en' ? '/' : `/${lang}/`}${pageFile}${location.search}${location.hash}`;
+}
+let savedLanguage = null;
+try { savedLanguage = localStorage.getItem('language'); } catch { /* Storage may be unavailable. */ }
+if (pathLanguage === 'en' && savedLanguage && savedLanguage !== 'en' && Object.hasOwn(siteTranslations, savedLanguage)) {
+    location.replace(languageUrl(savedLanguage));
+}
+applyTranslations(pathLanguage);
 
 languageButton.addEventListener('click', () => {
     closeNavigation();
@@ -991,10 +1008,9 @@ languageButton.addEventListener('click', () => {
 
 languageOptions.forEach(option => option.addEventListener('click', () => {
     const lang = option.dataset.language;
-    applyTranslations(lang);
-    try { localStorage.setItem('language', lang); } catch { /* Keep the current selection in this page. */ }
+    try { localStorage.setItem('language', lang); } catch { /* Preference is optional. */ }
     closeLanguageMenu();
-    languageButton.focus();
+    if (lang !== pathLanguage) location.href = languageUrl(lang);
 }));
 
 navigationToggle.addEventListener('click', () => {
